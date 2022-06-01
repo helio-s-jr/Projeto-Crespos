@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+}
+
+
+header, #container-header{
+    display: flex;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top : 0px;
+    z-index: 999999999;
+    background-color: rgb(255, 254, 254);
+}
+
+
+.box-fig-img{
+    display: flex;
+    width: 10%;
+    align-items: left;
+}
+
+
+.img-logo-hdr{
+    display: flex;
+    width: 55%;
+}
+
+
+.box-nav-list{
+    display: flex;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-list{
+    display: flex;
+    min-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.box-list li, a{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 3rem;
+    color: #9667a9;
+}
+
+
+a{
+    font-weight: 500;
+}
+a:hover{
+    color: rgb(203, 5, 150);
+}
+
+
+b{
+    font-weight: 900;
+}
+b:hover{
+    color: rgb(203, 5, 150);
+}
+
+
+
+#container-input-social-media{
+    display: flex;
+    width: 22%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-input{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-search{
+    display: flex;
+    width: 12em;
+    height: 2rem;
+    padding-left: 30px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #9667a9;
+    border-radius: 50px;
+    outline: none;
+    background-image: url(/imgs/Imagem-lupa-search.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+::-webkit-input-placeholder{
+    color: #9767a9;
+    align-items: center;
+    font-size: 14px;
+    opacity: 80%;
+}
+
+.box-imgs-social-media{
+    display: flex;
+    width: 32%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-face, .img-insta, .img-youtube{
+    width: 1.8em;
+    justify-content: center;
+}
