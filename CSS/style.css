@@ -8,98 +8,117 @@
 }
 
 
-header, #container-header{
+
+header{
     display: flex;
     width: 100%;
-    padding: 25px;
+    padding: 15px;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: fixed;
     top : 0px;
     z-index: 999999999;
-    background-color: rgb(255, 254, 254);
+    background-color: rgb(255, 255, 255);
 }
 
+
+#container-header{
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*logo*/
 
 .box-fig-img{
     display: flex;
     width: 10%;
     align-items: left;
 }
-
-
 .img-logo-hdr{
     display: flex;
     width: 55%;
 }
 
 
+
+/*navigation*/
+
+.box-nav-inpt-mds{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
 .box-nav-list{
     display: flex;
-    width: 60%;
+    width: 90%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
-
-
 .box-list{
     display: flex;
-    min-width: 100%;
+    min-width: 90%;
+    text-align: center;
+    align-items: left;
+    justify-content:center;
+}
+.box-list li > a{
+    display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
-}
-
-
-.box-list li, a{
-    display: flex;
-    list-style: none;
+    justify-content: center;
     text-decoration: none;
-    gap: 3rem;
     color: #9667a9;
 }
-
-
+ul{
+    list-style: none;
+}
+.link-dicas > b{
+    font-size: 1em;
+    font-weight: 800;
+}
 a{
-    font-weight: 500;
+    font-size: 0.9em;
+    font-weight: 600;
 }
-a:hover{
-    color: rgb(203, 5, 150);
-}
-
-
-b{
-    font-weight: 900;
-}
-b:hover{
-    color: rgb(203, 5, 150);
+li > a:hover{
+    color: rgb(206, 25, 197);
+    transform: scale(0.9, 0.9);
+    transition: 0.2s;
 }
 
 
+
+/*input e midias sociais*/
 
 #container-input-social-media{
-    display: flex;
-    width: 22%;
+    display: inline-flex;
+    width: 28%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
-
-
 .box-input{
-    display: flex;
-    width: 50%;
+    display: inline-flex;
+    width: 60%;
     align-items: center;
     justify-content: center;
 }
-
-
 .input-search{
     display: flex;
-    width: 12em;
-    height: 2rem;
+    width: 10em;
+    height: 1.7rem;
     padding-left: 30px;
     text-align: left;
     align-items: center;
@@ -109,25 +128,30 @@ b:hover{
     outline: none;
     background-image: url(/imgs/Imagem-lupa-search.png);
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 15px;
     background-position-x: 5px;
     background-position-y: center;
 }
 ::-webkit-input-placeholder{
     color: #9767a9;
     align-items: center;
-    font-size: 14px;
+    font-size: 13px;
     opacity: 80%;
 }
-
 .box-imgs-social-media{
-    display: flex;
-    width: 32%;
+    display: inline-flex;
+    width: 35%;
+    text-align: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
 .img-face, .img-insta, .img-youtube{
-    width: 1.8em;
+    width: 1.7em;
+    text-align: center;
+    align-items: center;
     justify-content: center;
 }
+
+
+
+/*main*/
