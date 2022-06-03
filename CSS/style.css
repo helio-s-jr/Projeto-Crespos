@@ -165,16 +165,11 @@ li > a:hover{
 main{
     display: flex;
     width: 100%;
+    flex-direction: column;
     flex-wrap: wrap;
-    position: relative;
-    object-fit: contain;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 888;
 }
-
-
 
 /*Imagem, título e parágrafo*/
 
@@ -185,6 +180,12 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+/*Imagem topo da main*/
+
 .box-fig-title-parag-top-main{
     display: flex;
     width: 100%;
@@ -204,83 +205,93 @@ main{
 }
 
 
-/*Título H1 e Parágrafo*/
+/*Título H1*/
 
 .box-title-parag-top-main{
     display: flex;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
     position: absolute;
+    top: 40%;
 }
 
 .box-title-top-main{
     display: flex;
-    width: 30%;
+    width: 35%;
     height: 28%;
     text-align: center;
     align-items: center;
-    position: absolute;
-    right: 56%;
-    bottom: 38%;
     
 }
 .title-top-main{
     display: flex;
-    width: 95%;
+    width: 75%;
     height: 70%;
+    margin-right: 14%;
     text-align: left;
     align-items: center;
     font-size: 5.8rem;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     font-family: 'Playfair Display', serif;
     line-height: 6rem;
     color: rgb(255, 255, 255);
 }
+
+
+
+/*Parágrafo*/
+
 .box-paragraph-top-main{
     display: flex;
-    width: 30%;
+    width: 40%;
     height: 15%;
     text-align: center;
     align-items: center;
-    position: absolute;
-    right: 16%;
-    bottom: 44%;
 }
 .paragraph-top-main{
     display: flex;
-    width: 78%;
+    width: 70%;
     height: 70%;
+    margin-right: 17%;
     text-align: left;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
 }
 
 
 
-/*Subtitle H2 e parágrafo*/
+/*Subtitle H2*/
 
 #container-subtitle-parag-top-main{
-    background-color: rgb(168, 89, 179);
     display: flex;
     width: 100%;
     padding-bottom: 6rem;
     justify-content: center;
     position: relative;
     object-fit: contain;
+    background-color: rgb(168, 89, 179);
 }
 .box-subtitle-parag-top-main{
     display: flex;
-    width: 85%;
+    width: 97%;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
+
+
+
+/*Subtítulo H2*/
+
 .box-subtitle-top-main{
-    display: flex;
     width: 55%;
     margin-bottom: 150px;
     text-align: left;
@@ -288,24 +299,34 @@ main{
 }
 .subtile-top-main{
     display: flex;
-    width: 85%;
+    width: 70%;
+    margin-left: 29%;
     text-align: left;
     align-items: center;
-    font-size: 3.3rem;
+    justify-content:left;
+    font-size: 3.5rem;
     font-style: normal;
     font-weight: 800;
     font-family: 'Playfair Display', serif;
     color: rgb(255, 255, 255);
 }
+
+
+
+/*Parágrafo*/
+
 .box-parag-2-top-main{
     display: flex;
-    width: 38%;
+    width: 45%;
     text-align: left;
     align-items: center;
 }
 .parag-2-top-main{
     display: flex;
-    width: 80%;
+    width: 70%;
+    margin-right: 28%;
+    text-align: left;
+    align-items: center;
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 200;
@@ -320,17 +341,28 @@ main{
 #container-figs-artics-middle-main{
     display: flex;
     width: 100%;
+    height: auto;
+    padding: 3%;
+    margin: 0 auto;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    object-fit: contain;
+    bottom: 95%;
+    background-color: transparent;
 }
 .box-figs-artics-middle-main{
     display: flex;
+    width: 100%;
+    margin: 0 auto;
     flex-wrap: wrap;
-    width: 95%;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    object-fit: contain;
+    background-color: transparent;
 }
 
 
@@ -339,11 +371,12 @@ main{
 
 .box-figs-artcs-1-2{
     display: flex;
-    width: 95%;
-    flex-wrap: wrap;
+    width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: relative;
+    object-fit: contain;
 }
 
 
@@ -353,33 +386,42 @@ main{
 .box-div-fig-artc-1{
     display: flex;
     width: 50%;
-    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 42em;
-    top: 63em;
+    right: 55em;
+    top: 70em;
 }
+
+
+
+/*Imagem 1*/
+
 .fig-middle-main-1{
     display: flex;
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .img-middle-main-1{
     display: flex;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     position: relative;
     object-fit: contain;
 }
+
+
+
+/*Artigo 1*/
+
 .article-middle-main-1{
     display: flex;
-    width: 60%;
-    height: 65%;
+    width: 50%;
+    height: 70%;
     padding: 1rem;
     flex-direction: column;
     text-align: center;
@@ -391,26 +433,26 @@ main{
 }
 .subtitle-h3-middle-main-1{
     display: flex;
-    width: 95%;
-    padding: 2%;
+    width: 83%;
+    padding: 0.5rem;
     text-align: left;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     font-weight: bolder;
     font-style: normal;
-    font-family: 'Nuosu SIL', serif;
+    font-family: 'Playfair Display', serif;
     color: rgb(255, 255, 255);
 }
 .paragraph-middle-main-1{
     display: flex;
-    width: 95%;
-    padding: 2%;
+    width: 83%;
+    padding: 0.6rem;
     text-align: left;
     align-items: center;
-    font-size: 0.9rem;
-    font-weight: lighter;
+    font-size: 1rem;
     font-style: normal;
-    font-family: 'Nuosu SIL', serif;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
 }
 
@@ -427,12 +469,17 @@ main{
     justify-content: center;
     position: absolute;
     right: 7.5em;
-    top: 80em;
+    top: 90em;
 }
+
+
+
+/*Imagem 2*/
+
 .fig-middle-main-2{
     display: flex;
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -444,10 +491,15 @@ main{
     position: relative;
     object-fit: contain;
 }
+
+
+
+/*Artigo 2*/
+
 .article-middle-main-2{
     display: flex;
-    width: 60%;
-    height: 65%;
+    width: 50%;
+    height: 70%;
     padding: 1rem;
     flex-direction: column;
     text-align: center;
@@ -459,26 +511,26 @@ main{
 }
 .subtitle-h3-middle-main-2{
     display: flex;
-    width: 95%;
-    padding: 2%;
+    width: 83%;
+    padding: 0.5rem;
     text-align: left;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     font-weight: bolder;
     font-style: normal;
-    font-family: 'Nuosu SIL', serif;
+    font-family: 'Playfair Display', serif;
     color: rgb(255, 255, 255);
 }
 .paragraph-middle-main-2{
     display: flex;
-    width: 95%;
-    padding: 2%;
+    width: 83%;
+    padding: 0.6rem;
     text-align: left;
     align-items: center;
-    font-size: 0.9rem;
-    font-weight: lighter;
+    font-size: 1rem;
     font-style: normal;
-    font-family: 'Nuosu SIL', serif;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
 }
 
@@ -491,7 +543,8 @@ main{
     width: 95%;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    object-fit: contain;
 }
 
 
@@ -499,36 +552,77 @@ main{
 /*Imagem e artigo 3*/
 
 .box-div-fig-artc-3{
-    background-color: aqua;
     display: flex;
-    flex-wrap: wrap;
-    width: 55%;
+    width: 50%;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 55em;
+    top: 130em;
 }
+
+
+
+/*Imagem 3*/
+
 .fig-middle-main-3{
-    background-color: darkkhaki;
     display: flex;
     width: 80%;
+    height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .img-middle-main-3{
-    background-color: gold;
     display: flex;
-    width: 85%;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    object-fit: contain;
 }
+
+
+
+/*Artigo 3*/
+
 .article-middle-main-3{
-    background-color: rgb(168, 89, 179);
     display: flex;
     width: 55%;
+    height: 45%;
+    padding: 1rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 85%;
+    background-color: rgb(168, 89, 179);
+}
+.subtitle-h3-middle-main-3{
+    display: flex;
+    width: 83%;
+    padding: 0.5rem;
+    text-align: left;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+}
+.paragraph-middle-main-3{
+    display: flex;
+    width: 83%;
+    padding: 0.6rem;
+    text-align: left;
+    align-items: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -536,36 +630,77 @@ main{
 /*Imagem e artigo 4*/
 
 .box-div-fig-artc-4{
-    background-color: aqua;
     display: flex;
-    flex-wrap: wrap;
-    width: 55%;
+    width: 50%;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 7.5em;
+    top: 150em;
 }
+
+
+
+/*Imagem 4*/
+
 .fig-middle-main-4{
-    background-color: darkkhaki;
     display: flex;
     width: 80%;
+    height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .img-middle-main-4{
-    background-color: gold;
     display: flex;
-    width: 85%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    object-fit: contain;
 }
+
+
+
+/*Artigo 4*/
+
 .article-middle-main-4{
-    background-color: rgb(168, 89, 179);
     display: flex;
     width: 55%;
+    height: 46%;
+    padding: 1rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 85%;
+    background-color: rgb(168, 89, 179);
+}
+.subtitle-h3-middle-main-4{
+    display: flex;
+    width: 83%;
+    padding: 0.5rem;
+    text-align: left;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+}
+.paragraph-middle-main-4{
+    display: flex;
+    width: 83%;
+    padding: 0.6rem;
+    text-align: left;
+    align-items: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -575,10 +710,10 @@ main{
 .box-figs-artcs-5-6{
     display: flex;
     width: 95%;
-    flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    object-fit: contain;
 }
 
 
@@ -586,35 +721,77 @@ main{
 /*Imagem e artigo 5*/
 
 .box-div-fig-artc-5{
-    background-color: aqua;
     display: flex;
-    width: 55%;
+    width: 50%;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 55em;
+    top: 190em;
 }
+
+
+
+/*Imagem 5*/
+
 .fig-middle-main-5{
-    background-color: darkkhaki;
     display: flex;
     width: 80%;
+    height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .img-middle-main-5{
-    background-color: gold;
     display: flex;
-    width: 85%;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    object-fit: contain;
 }
+
+
+
+/*Artigo 5*/
+
 .article-middle-main-5{
-    background-color: rgb(168, 89, 179);
     display: flex;
-    width: 55%;
+    width: 48%;
+    height: 58%;
+    padding: 1rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 85%;
+    background-color: rgb(168, 89, 179);
+}
+.subtitle-h3-middle-main-5{
+    display: flex;
+    width: 83%;
+    padding: 0.5rem;
+    text-align: left;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+}
+.paragraph-middle-main-5{
+    display: flex;
+    width: 83%;
+    padding: 0.6rem;
+    text-align: left;
+    align-items: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -622,36 +799,77 @@ main{
 /*Imagem e artigo 6*/
 
 .box-div-fig-artc-6{
-    background-color: aqua;
     display: flex;
-    flex-wrap: wrap;
-    width: 55%;
+    width: 50%;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 7.5em;
+    top: 210em;
 }
+
+
+
+/*Imagem 6*/
+
 .fig-middle-main-6{
-    background-color: darkkhaki;
     display: flex;
     width: 80%;
+    height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .img-middle-main-6{
-    background-color: gold;
     display: flex;
-    width: 85%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    object-fit: contain;
 }
+
+
+
+/*Artigo 6*/
+
 .article-middle-main-6{
-    background-color: rgb(168, 89, 179);
     display: flex;
-    width: 55%;
+    width: 50%;
+    height: 46%;
+    padding: 1rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 85%;
+    background-color: rgb(168, 89, 179);
+}
+.subtitle-h3-middle-main-6{
+    display: flex;
+    width: 83%;
+    padding: 0.5rem;
+    text-align: left;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+}
+.paragraph-middle-main-6{
+    display: flex;
+    width: 83%;
+    padding: 0.6rem;
+    text-align: left;
+    align-items: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -663,7 +881,8 @@ main{
     width: 95%;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    object-fit: contain;
 }
 
 
@@ -671,36 +890,77 @@ main{
 /*Imagem e artigo 7*/
 
 .box-div-fig-artc-7{
-    background-color: aqua;
     display: flex;
-    flex-wrap: wrap;
-    width: 55%;
+    width: 50%;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 55em;
+    top: 250em;
 }
+
+
+
+/*Imagem 7*/
+
 .fig-middle-main-7{
-    background-color: darkkhaki;
     display: flex;
     width: 80%;
+    height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .img-middle-main-7{
-    background-color: gold;
     display: flex;
-    width: 85%;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    object-fit: contain;
 }
+
+
+
+/*Artigo 7*/
+
 .article-middle-main-7{
-    background-color: rgb(168, 89, 179);
     display: flex;
     width: 55%;
+    height: 40%;
+    padding: 1rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 85%;
+    background-color: rgb(168, 89, 179);
+}
+.subtitle-h3-middle-main-7{
+    display: flex;
+    width: 83%;
+    padding: 0.5rem;
+    text-align: left;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+}
+.paragraph-middle-main-7{
+    display: flex;
+    width: 83%;
+    padding: 0.6rem;
+    text-align: left;
+    align-items: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -708,25 +968,208 @@ main{
 /*Imagem e artigo rabisco*/
 
 .box-div-fig-artc-rabisco{
-    background-color: aqua;
     display: flex;
-    flex-wrap: wrap;
-    width: 55%;
+    width: 50%;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 11.2em;
+    top: 135em;
 }
+
+
+
+/*Imagem Rabisco*/
+
 .fig-middle-main-rabisco{
-    background-color: darkkhaki;
     display: flex;
     width: 80%;
+    height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .img-middle-main-rabisco{
-    background-color: gold;
     display: flex;
-    width: 85%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    object-fit: contain;
+}
+
+
+
+/*Galeria de fotos com colunas*/
+
+#container-gallery-photograph{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.box-gallery-photograph{
+    display: flex;
+    width: 60%;
+    padding: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 295em;
+}
+
+
+
+/*Coluna 1*/
+
+.box-column-1{
+    display: flex;
+    width: 40%;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-king-column-1{
+    width: 15.3em;
+}
+.img-gloria-column-1{
+    width: 15.3em;
+}
+
+/*Coluna 2*/
+
+.box-column-2{
+    display: flex;
+    width: 40%;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-beyonce-column-2{
+    width: 10.1em;
+}
+.img-killmonger-column-2{
+    width: 10.1em;
+}
+.img-thais-araujo-column-2{
+    width: 10.1em;
+}
+
+/*Coluna 3*/
+
+.box-column-3{
+    display: flex;
+    width: 40%;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-woman-cigarret-column-3{
+    width: 10em;
+}
+.img-soop-dog-column-3{
+    width: 10em;
+}
+
+/*Coluna 4*/
+
+.box-column-4{
+    display: flex;
+    width: 40%;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-black-man-column-4{
+    width: 15.1em;
+}
+
+/*Coluna 5*/
+
+.box-column-5{
+    display: flex;
+    width: 40%;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-black-woman-nago-column-5{
+    width: 10.2em;
+}
+.img-man-beard-column-5{
+    width: 10em;
+}
+
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 335em;
+    background-color:#9767a9;
+}
+
+
+/*Creditos*/
+
+
+.box-credits{
+    background-color: coral;
+    display: flex;
+    width: 50%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*Setas*/
+
+.box-nav-footer{
+    background-color: deeppink;
+    display: flex;
+    width: 30%;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.box-arrow-left-footer{
+    background-color: cyan;
+    display: flex;
+    width: 15%;
+    align-items: center;
+}
+.box-arrow-up-footer{
+    background-color: cyan;
+    display: flex;
+    width: 15%;
+    align-items: center;
+}
+.box-arrow-right-footer{
+    background-color: cyan;
+    display: flex;
+    width: 15%;
+    align-items: center;
 }
