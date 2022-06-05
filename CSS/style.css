@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
     margin: 0 auto;
 }
 
@@ -165,6 +166,7 @@ li > a:hover{
 main{
     display: flex;
     width: 100%;
+    margin: 0 auto;
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
@@ -201,6 +203,7 @@ main{
 .img-black-man-power-top-main{
     display: flex;
     width: 100%;
+    position: relative;
     object-fit: contain;
 }
 
@@ -341,7 +344,6 @@ main{
 #container-figs-artics-middle-main{
     display: flex;
     width: 100%;
-    height: auto;
     padding: 3%;
     margin: 0 auto;
     text-align: center;
@@ -349,7 +351,8 @@ main{
     justify-content: center;
     position: absolute;
     object-fit: contain;
-    bottom: 95%;
+    left: 10em;
+    top: -15em;
     background-color: transparent;
 }
 .box-figs-artics-middle-main{
@@ -1038,8 +1041,16 @@ main{
 .img-king-column-1{
     width: 15.3em;
 }
+.img-king-column-1:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
+}
 .img-gloria-column-1{
     width: 15.3em;
+}
+.img-gloria-column-1:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
 }
 
 /*Coluna 2*/
@@ -1055,11 +1066,23 @@ main{
 .img-beyonce-column-2{
     width: 10.1em;
 }
+.img-beyonce-column-2:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
+}
 .img-killmonger-column-2{
     width: 10.1em;
 }
+.img-killmonger-column-2:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
+}
 .img-thais-araujo-column-2{
     width: 10.1em;
+}
+.img-thais-araujo-column-2:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
 }
 
 /*Coluna 3*/
@@ -1075,8 +1098,16 @@ main{
 .img-woman-cigarret-column-3{
     width: 10em;
 }
+.img-woman-cigarret-column-3:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
+}
 .img-soop-dog-column-3{
     width: 10em;
+}
+.img-soop-dog-column-3:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
 }
 
 /*Coluna 4*/
@@ -1092,6 +1123,10 @@ main{
 .img-black-man-column-4{
     width: 15.1em;
 }
+.img-black-man-column-4:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
+}
 
 /*Coluna 5*/
 
@@ -1106,8 +1141,16 @@ main{
 .img-black-woman-nago-column-5{
     width: 10.2em;
 }
+.img-black-woman-nago-column-5:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
+}
 .img-man-beard-column-5{
     width: 10em;
+}
+.img-man-beard-column-5:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.8s;
 }
 
 
@@ -1117,6 +1160,7 @@ main{
 footer{
     display: flex;
     width: 100%;
+    padding: 1.2em;
     text-align: center;
     align-items: center;
     justify-content: space-between;
@@ -1130,13 +1174,19 @@ footer{
 
 
 .box-credits{
-    background-color: coral;
     display: flex;
-    width: 50%;
-    text-align: left;
+    width: 55%;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 0.8em;
+}
+.paragrf-credits{
+    display: flex;
+    width: 95%;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+    font-size: 0.7em;
     font-weight: 500;
     font-style: normal;
     color: rgb(255, 255, 255);
@@ -1146,30 +1196,110 @@ footer{
 
 /*Setas*/
 
-.box-nav-footer{
-    background-color: deeppink;
+.container-nav-footer{
     display: flex;
-    width: 30%;
-    padding: 1em;
+    width: 25%;
+    padding: 0.8rem;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+/*Seta para esquerda*/
+
+.anchor-arrow-left{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 .box-arrow-left-footer{
-    background-color: cyan;
     display: flex;
-    width: 15%;
+    width: 75%;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+}
+.img-arrow-left{
+    display: flex;
+    width: 1.9em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.title-arrow-left{
+    display: flex;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/*Seta para cima*/
+
+.anchor-arrow-up{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 .box-arrow-up-footer{
-    background-color: cyan;
     display: flex;
-    width: 15%;
+    width: 75%;
+    text-align: center;
     align-items: center;
+    justify-content: center;
 }
-.box-arrow-right-footer{
-    background-color: cyan;
+.img-arrow-up{
     display: flex;
-    width: 15%;
+    width: 1.9em;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+}
+.title-arrow-up{
+    display: flex;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/*Seta para direita*/
+
+.anchor-arrow-right{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.box-img-arrow-right-footer{
+    display: flex;
+    width: 75%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.img-arrow-right{
+    display: flex;
+    width: 1.9em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.title-arrow-right{
+    display: flex;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
+    font-family: 'Montserrat', sans-serif;
 }
